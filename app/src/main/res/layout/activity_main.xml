@@ -3,9 +3,120 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:nestedScrollingEnabled="true"
     tools:context=".MainActivity">
 
-    <!-- Место для верстки -->
+    <ImageView
+        android:id="@+id/background_dota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/background_dota2"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_dota2" />
+
+    <ImageView
+        android:id="@+id/dota2_icon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="-39dp"
+        android:background="@drawable/icon_background_dota2"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/dota_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_dota2"
+        app:srcCompat="@drawable/icon_dota2" />
+
+    <TextView
+        android:id="@+id/dota2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dota"
+        style="@style/Title"
+        app:layout_constraintStart_toEndOf="@+id/dota2_icon"
+        app:layout_constraintTop_toTopOf="@+id/dota2_icon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/dota2_icon"
+        app:layout_constraintTop_toBottomOf="@+id/dota2_name">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_weight="1"
+            style="@style/Star"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_weight="1"
+            style="@style/Star"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_weight="1"
+            style="@style/Star"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_weight="1"
+            style="@style/Star"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_weight="1"
+            style="@style/Star"
+            app:srcCompat="@drawable/star" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dota2_icon">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:text="@string/moba" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:text="@string/multiplayer" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:text="@string/strategy" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
