@@ -11,4 +11,7 @@
     <string name="title_rating">Review and Ratings</string>
     <string name="rate">4.9</string>
     <string name="count_reviews">70M Reviews</string>
+    <string name="jung">Auguste Conte</string>
+    <string name="date_jung">February 14, 2019</string>
+    <string name="descrilption_jung">\'Once you start to learn its secrets, there’s a wild and exciting variety of play here that’s unmatched, even by its peers.\'</string>
 </resources>
