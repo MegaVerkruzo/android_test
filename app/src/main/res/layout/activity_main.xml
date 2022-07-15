@@ -7,260 +7,278 @@
     android:nestedScrollingEnabled="true"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/background_dota2"
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/background_dota2"
-        android:scaleType="centerCrop"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background_dota2" />
+        tools:ignore="SpeakableTextPresentCheck">
 
-    <ImageView
-        android:id="@+id/dota2_icon"
-        android:layout_width="84dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="-39dp"
-        android:background="@drawable/icon_background_dota2"
-        android:contentDescription="@string/dota_icon"
-        android:scaleType="centerInside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/background_dota2"
-        app:srcCompat="@drawable/icon_dota2" />
-
-    <TextView
-        android:id="@+id/dota2_name"
-        style="@style/Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/dota"
-        app:layout_constraintStart_toEndOf="@+id/dota2_icon"
-        app:layout_constraintTop_toTopOf="@+id/dota2_icon" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="7dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toEndOf="@+id/dota2_icon"
-        app:layout_constraintTop_toBottomOf="@+id/dota2_name">
-
-        <ImageView
-            android:id="@+id/imageView"
-            style="@style/Star"
-            android:layout_marginRight="4dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/star" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            style="@style/Star"
-            android:layout_marginRight="4dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/star" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            style="@style/Star"
-            android:layout_marginRight="4dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/star" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            style="@style/Star"
-            android:layout_marginRight="4dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/star" />
-
-        <ImageView
-            android:id="@+id/start"
-            style="@style/Star"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/star" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/categories"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="25dp"
-        android:orientation="horizontal"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dota2_icon">
-
-        <TextView
-            android:id="@+id/moba"
-            style="@style/Categories"
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:text="@string/moba" />
-
-        <TextView
-            android:id="@+id/multiplayer"
-            style="@style/Categories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:text="@string/multiplayer" />
-
-        <TextView
-            android:id="@+id/strategy"
-            style="@style/Categories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:text="@string/strategy" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_weight="1"
-        android:gravity=""
-        android:text="@string/description_dota2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/categories"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="408dp" />
-
-    <TextView
-        android:id="@+id/title_rating"
-        style="@style/Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/title_rating"
-        android:textSize="16sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/description" />
-
-    <TextView
-        android:id="@+id/rating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_rating"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        style="@style/Title"
-        android:textSize="48sp"
-        android:text="@string/rate" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
 
-    <LinearLayout
-        android:id="@+id/stars5_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="17dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toEndOf="@+id/rating"
-        app:layout_constraintTop_toTopOf="@+id/rating">
+            <ImageView
+                android:id="@+id/background_dota2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/background_dota2"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/background_dota2" />
 
-        <ImageView
-            android:id="@+id/imageView6"
-            style="@style/Star"
-            android:layout_marginRight="4dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/star" />
+            <ImageView
+                android:id="@+id/dota2_icon"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="-39dp"
+                android:background="@drawable/icon_background_dota2"
+                android:contentDescription="@string/dota_icon"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_dota2"
+                app:srcCompat="@drawable/icon_dota2" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            style="@style/Star"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/star" />
+            <TextView
+                android:id="@+id/dota2_name"
+                style="@style/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/dota"
+                app:layout_constraintStart_toEndOf="@+id/dota2_icon"
+                app:layout_constraintTop_toTopOf="@+id/dota2_icon" />
 
-        <ImageView
-            android:id="@+id/imageView8"
-            style="@style/Star"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/star" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@+id/dota2_icon"
+                app:layout_constraintTop_toBottomOf="@+id/dota2_name">
 
-        <ImageView
-            android:id="@+id/imageView9"
-            style="@style/Star"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/star" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    style="@style/Star"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/star" />
 
-        <ImageView
-            android:id="@+id/imageView10"
-            style="@style/Star"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/star" />
-    </LinearLayout>
+                <ImageView
+                    android:id="@+id/imageView4"
+                    style="@style/Star"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/star" />
 
-    <TextView
-        android:id="@+id/count_reviews"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/count_reviews"
-        app:layout_constraintLeft_toRightOf="@id/rating"
-        app:layout_constraintTop_toBottomOf="@id/stars5_2" />
+                <ImageView
+                    android:id="@+id/imageView5"
+                    style="@style/Star"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/star" />
 
-    <ImageView
-        android:id="@+id/jung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/jang"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rating"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp" />
+                <ImageView
+                    android:id="@+id/imageView3"
+                    style="@style/Star"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/star" />
 
-    <TextView
-        android:id="@+id/name_jung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/jung"
-        style="@style/Name"
-        app:layout_constraintLeft_toRightOf="@id/jung"
-        app:layout_constraintTop_toTopOf="@id/jung"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="2dp"/>
+                <ImageView
+                    android:id="@+id/start"
+                    style="@style/Star"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/star" />
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/date_jung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/date_jung"
-        style="@style/Description"
-        app:layout_constraintLeft_toRightOf="@id/jung"
-        app:layout_constraintTop_toBottomOf="@id/name_jung"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="7dp"/>
+            <LinearLayout
+                android:id="@+id/categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dota2_icon">
 
-    <TextView
-        android:id="@+id/description_jung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/descrilption_jung"
-        style="@style/Description"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/jung"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="18dp"/>
+                <TextView
+                    android:id="@+id/moba"
+                    style="@style/Categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/moba" />
 
+                <TextView
+                    android:id="@+id/multiplayer"
+                    style="@style/Categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/multiplayer" />
+
+                <TextView
+                    android:id="@+id/strategy"
+                    style="@style/Categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/strategy" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:gravity=""
+                android:text="@string/description_dota2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categories"
+                tools:layout_editor_absoluteX="310dp"
+                tools:layout_editor_absoluteY="408dp" />
+
+            <TextView
+                android:id="@+id/title_rating"
+                style="@style/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_rating"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description" />
+
+            <TextView
+                android:id="@+id/rating"
+                style="@style/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/rate"
+                android:textSize="48sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_rating" />
+
+
+            <LinearLayout
+                android:id="@+id/stars5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@+id/rating"
+                app:layout_constraintTop_toTopOf="@+id/rating">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    style="@style/Star"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    style="@style/Star"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    style="@style/Star"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    style="@style/Star"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    style="@style/Star"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/star" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/count_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/count_reviews"
+                app:layout_constraintLeft_toRightOf="@id/rating"
+                app:layout_constraintTop_toBottomOf="@id/stars5_2" />
+
+            <ImageView
+                android:id="@+id/jung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rating"
+                app:srcCompat="@drawable/jang" />
+
+            <TextView
+                android:id="@+id/name_jung"
+                style="@style/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/jung"
+                app:layout_constraintLeft_toRightOf="@id/jung"
+                app:layout_constraintTop_toTopOf="@id/jung" />
+
+            <TextView
+                android:id="@+id/date_jung"
+                style="@style/Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/date_jung"
+                app:layout_constraintLeft_toRightOf="@id/jung"
+                app:layout_constraintTop_toBottomOf="@id/name_jung" />
+
+            <TextView
+                android:id="@+id/description_jung"
+                style="@style/Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/descrilption_jung"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/jung" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
