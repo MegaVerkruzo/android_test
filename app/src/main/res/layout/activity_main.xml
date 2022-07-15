@@ -140,7 +140,7 @@
         tools:layout_editor_absoluteY="408dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/title_rating"
         style="@style/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -151,6 +151,75 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/description" />
 
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_rating"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        style="@style/Title"
+        android:textSize="48sp"
+        android:text="@string/rate" />
+
+
+    <LinearLayout
+        android:id="@+id/stars5_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/rating"
+        app:layout_constraintTop_toTopOf="@+id/rating">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            style="@style/Star"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            style="@style/Star"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            style="@style/Star"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            style="@style/Star"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            style="@style/Star"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/count_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/count_reviews"
+        app:layout_constraintLeft_toRightOf="@id/rating"
+        app:layout_constraintTop_toBottomOf="@id/stars5_2"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="408dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
